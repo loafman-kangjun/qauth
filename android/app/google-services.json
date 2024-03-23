@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1027398974519",
+    "project_id": "qauth-47fd9",
+    "storage_bucket": "qauth-47fd9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027398974519:android:6e0b0ebafc319fdf7593b2",
+        "android_client_info": {
+          "package_name": "top.loafman.qauth.qauth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBEaN1WArv8g8LK6krAKMfFbERJ99qx1Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
