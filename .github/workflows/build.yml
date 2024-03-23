@@ -21,6 +21,7 @@ jobs:
           channel: 'stable'
           cache: true
       - run: flutter pub get
+      - run: flutter doctor --verbose
       - run: flutter build apk
   build-ios:
     runs-on: macos-latest
