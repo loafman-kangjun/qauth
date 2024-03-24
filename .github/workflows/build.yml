@@ -21,7 +21,13 @@ jobs:
           channel: 'stable'
           cache: true
       - run: flutter pub get
-      - run: flutter doctor --verbose
+      - name: Create env
+        uses: SpicyPizza/create-envfile@v2.0
+        with:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+      - name: Fix env
+        run: dart run build_runner build
       - run: flutter build apk
       - name: Upload APK
         uses: actions/upload-artifact@v4

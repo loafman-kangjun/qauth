@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
-// Firebase Import
-// import 'firebase_options.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
+import 'env/env.dart';
 
 Future<void> main() async {
-  // WidgetsFlutterBinding.ensureInitialized();
-  // await Firebase.initializeApp(
-  //   options: DefaultFirebaseOptions.currentPlatform,
-  // );
+  WidgetsFlutterBinding.ensureInitialized();
+  await Supabase.initialize(
+    url: Env.supabase_url,
+    anonKey: Env.supabase_url,
+  );
   runApp(const MainApp());
 }
 
