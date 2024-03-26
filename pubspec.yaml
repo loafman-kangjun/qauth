@@ -1,4 +1,4 @@
-name: qauth
+name: QAuth
 description: "A Quick Auth for TOTP Application"
 publish_to: 'none'
 version: 1.0.0+1
@@ -13,6 +13,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   supabase_flutter: ^2.3.4
   envied: ^0.5.3
+  getwidget: ^4.0.0
 
 dev_dependencies:
   flutter_test:
